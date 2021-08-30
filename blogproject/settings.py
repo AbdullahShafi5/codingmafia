@@ -1,6 +1,6 @@
-
 from pathlib import Path
 import os
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -69,7 +69,7 @@ WSGI_APPLICATION = 'blogproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', #db.sqlite3
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
         'NAME':'mydatabase1',
         'USER':'mafia1',
         'PASSWORD':'mafia1',
@@ -127,3 +127,5 @@ STATICFILES_DIRS = [
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals()) 
