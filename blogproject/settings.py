@@ -68,7 +68,7 @@ WSGI_APPLICATION = 'blogproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.postgresql_psycopg2', #db.sqlite3
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', #db.sqlite3
         # 'NAME': BASE_DIR / 'db.sqlite3',
         #  'NAME':'mydatabase1',
         #  'USER':'mafia1',
