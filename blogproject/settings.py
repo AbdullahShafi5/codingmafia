@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-uvuxlm9l+#^ou-4r0x)wc!)81kn=@(!xo+@w825@+zhih)466w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'codingmafia.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1']  #, 'codingmafia.herokuapp.com'
 
 # DJANGO_SETTINGS_MODULE=myappfolder.settings.__init__
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # MEDIA_ROOT= os.path.join(BASE_DIR,'static')
 MEDIA_URL = '/image/'
 STATICFILES_DIRS = [
@@ -126,4 +126,3 @@ STATICFILES_DIRS = [
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
