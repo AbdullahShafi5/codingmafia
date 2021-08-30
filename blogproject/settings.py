@@ -12,8 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-uvuxlm9l+#^ou-4r0x)wc!)81kn=@(!xo+@w825@+zhih)466w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG_VALUE')=='True')
-
+DEBUG = True
 ALLOWED_HOSTS = ['*']  #, 'codingmafia.herokuapp.com'
 
 # DJANGO_SETTINGS_MODULE=myappfolder.settings.__init__
