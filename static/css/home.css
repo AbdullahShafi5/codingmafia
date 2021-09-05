@@ -358,3 +358,33 @@ h1 {
   justify-content: center;
   margin:30px auto 20px auto;
 }
+
+@media only screen and (max-width:1270px){
+  .blog_show_section_home{
+    width: auto;
+    gap: 0px 15px;
+    margin: auto 20px auto 20px;
+  }
+  .my-cst-btn{
+    width: auto;
+
+  }
+}
+@media only screen and (max-width:1018px){
+  .my-cst-btn{
+    width: 623px;
+  }
+  .blog_show_section_home{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.card-text mb-auto{
+  font-size: 15px;
+}
+@media only screen and (max-width:665px){
+  .my-cst-btn{
+    height: auto;
+    width: auto;
+
+  }
+}
