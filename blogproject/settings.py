@@ -9,13 +9,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = 'django-insecure-uvuxlm9l+#^ou-4r0x)wc!)81kn=@(!xo+@w825@+zhih)466w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
+
 ALLOWED_HOSTS = ['*']  #, 'codingmafia.herokuapp.com'
 
 # DJANGO_SETTINGS_MODULE=myappfolder.settings.__init__
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -69,9 +73,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', #db.sqlite3
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME':'mydatabase1',
-        'USER':'mafia1',
-        'PASSWORD':'mafia1',
+        'NAME':'mafia1',
+        'USER':'postgres',
+        'PASSWORD':'12345',
         'HOST':'localhost',
         'PORT':'5432'
         # out of here
@@ -98,8 +102,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -129,4 +131,6 @@ STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals()) 
+django_heroku.settings(locals())
+
+# scram-sha-256
