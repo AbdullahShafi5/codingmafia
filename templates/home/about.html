@@ -1,24 +1,47 @@
 {% extends 'base.html' %}
 <title>{% block title %}about{% endblock title %}</title>
-
 {% block body %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
 </head>
 <body>
     <div class="uganda">
-        
+    <h1> This part is currently under construction </h1>
+    <div>
+        <h2> Coming soon...</h2>
+    </div>
     </div>
     <style>
-        
+        .uganda{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-image: linear-gradient(23deg , #f55e5e , #cacaca  , #7ddc96);
+            flex-direction: column;
+            font-size: calc(12px + 1vw)
+        }
+        .uganda>h1{
+            font-size: 25px;
+        }
+        @media only screen and (max-width:483px){
+            .uganda>h1{
+                font-size: 17px;
+            }
+        }
+
+        @media only screen and (max-width:328px){
+            .uganda>h1{
+                font-size: 4vw;
+            }
+        }
     </style>
 </body>
 </html>
-
 {% endblock body %}

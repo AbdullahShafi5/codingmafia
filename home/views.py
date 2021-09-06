@@ -6,6 +6,10 @@ from blog.models import Posts
 def home(request):
     allposts = Posts.objects.all() 
     context = {'allposts':allposts}
+    if request.method =="POST":
+        print("it's working")
+        sbs_name = request.POST.get('name') 
+        print(sbs_name)
     return render(request,"home/home.html",context)
 
 def about(request):
