@@ -1,15 +1,19 @@
 from django.shortcuts import render,redirect , HttpResponse 
 from home import views
+from home.models import SubscribeEmail
 from .models import Contact
 from django.contrib import messages
 from blog.models import Posts
+
 def home(request):
     allposts = Posts.objects.all() 
     context = {'allposts':allposts}
     if request.method =="POST":
-        print("it's working")
-        sbs_name = request.POST.get('name') 
-        print(sbs_name)
+        sbscrb_email = request.POST.get('sbscrb_email') 
+        saving_datas = SubscribeEmail(sbscrb_email=sbscrb_email)
+        saving_datas.save()
+        print("data has beem saved")
+        
     return render(request,"home/home.html",context)
 
 def about(request):

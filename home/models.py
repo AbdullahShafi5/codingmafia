@@ -11,3 +11,5 @@ class Contact(models.Model):
         return "This shit is from " + self.name +'-' + self.email
      
 
+class SubscribeEmail(models.Model):
+    sbscrb_email  = models.EmailField()
