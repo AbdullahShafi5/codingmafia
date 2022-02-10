@@ -7,6 +7,9 @@
   <title>{% block title %}Home{% endblock title %}</title>
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="main-container">
@@ -58,11 +61,11 @@
       {% for post in allposts %}
       <div class="my-cst-btn" style="padding: 10px">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong style="font-weight: 500" class="d-inline-block mb-2 text-primary">{{post.title}}</strong>
+          <strong style="font-weight: 500" class="d-inline-block mb-2 text-primary titles-texts">{{post.title}}</strong>
           <br />
           <br />
           <!-- <h3 style="font-weight: 450">author:{{post.author}}</h3> -->
-          <p class="card-text mb-auto" style="padding: 14px">
+          <p class="card-text card-text-crt mb-auto" style="padding: 14px">
             {{post.content |truncatechars:100}}
           </p>
           <br />
@@ -75,6 +78,7 @@
                   border-radius: 5px;
                   color: rgb(0, 0, 0);
                   transition: 0.2s;
+                  font-family: Quicksand;
                 ">Read More</a>
           </div>
         </div>
@@ -93,7 +97,7 @@
         <script src="{% static 'jsx/particle.min.js' %}"></script>
         <script src="{% static 'jsx/app.js' %}"></script>
         <div class="Temp_form">
-          <h2>Subscribe the Newsletter to stay updated.</h2>
+          <h2>Subscribe to the Newsletter</h2>
           <form action="/" method="POST" id="sbscrb_email" /> {% csrf_token %}
           <input type="email" placeholder="Your Email" name="sbscrb_email">
           <span>

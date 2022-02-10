@@ -1,22 +1,16 @@
 from pathlib import Path
 import os
+from pickle import TRUE
 import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-
 SECRET_KEY = 'django-insecure-uvuxlm9l+#^ou-4r0x)wc!)81kn=@(!xo+@w825@+zhih)466w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']  #, 'codingmafia.herokuapp.com'
+ALLOWED_HOSTS = ['127.0.0.1']  #, 'codingmafia.herokuapp.com'
 
 # DJANGO_SETTINGS_MODULE=myappfolder.settings.__init__
 
@@ -130,6 +124,9 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEBUG = False
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 django_heroku.settings(locals())
 

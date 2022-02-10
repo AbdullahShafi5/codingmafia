@@ -1,0 +1,189 @@
+body {
+    background-color:  rgb(201, 201, 201) ;
+    font-family: "Roboto", sans-serif;
+    
+  }
+
+   .login-box {
+      text-align: center;
+      padding-top: 50px;
+      width: 360px;
+      height: 325px;
+      margin: auto;
+      border-radius: 8px;
+      background-color: rgb(255 255 255);
+      margin-top: 82px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  form label {
+    display: flex;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+  input[type="submit"] {
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    border: none;
+    background-color: #171c24;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    
+  }
+  .para-2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color: #5f0cce;
+  }
+  @media (max-width:400px){
+      .login-box{
+        width: 290px;
+      }
+      input[type="button"]{
+        width: 200px;
+      }
+      form{
+        width: 200px;
+      }
+    }
+    
+/*signup css */
+
+
+
+
+  .signup-box {
+  padding-top: 30px;
+  width: 360px;
+  height: 380px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 82px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+.sgn_tx{
+  
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-left: 40px;
+  width: 100px;
+  height: 35px;
+  margin-top: 30px;
+  border: none;
+  background-color: #171c24;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+ 
+}      
+
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 10px;
+}
+
+.para-2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin-top: -10px;
+  padding-bottom:40px ;
+}
+
+.para-2 a {
+  color: #5f0cce;
+}
+
+@media (max-width:400px){
+  .signup-box{
+    width: 290px;
+  }
+  .sgn_tx{
+    margin-right: 30px;
+  }
+ 
+  form{
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width:608px) {
+  body{
+    overflow-x: hidden;
+  }
+}
+
+#eye_icon{
+  display: none;
+}
+
+.fn-text-p{
+  font-size: 20px;
+}
